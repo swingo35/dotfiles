@@ -1,0 +1,94 @@
+# Ghostty Terminal Configuration
+# Optimized for development workflow with tmux and Neovim
+
+# Font Configuration
+font-family = "JetBrains Mono Nerd Font"
+font-size = 14
+font-thicken = true
+
+# Theme and Appearance
+theme = auto  # Follows macOS light/dark mode
+background-opacity = 0.95
+unfocused-split-opacity = 0.7
+
+# Window Configuration
+window-decoration = false
+window-padding-x = 12
+window-padding-y = 12
+window-title-font-family = "JetBrains Mono Nerd Font"
+
+# Performance
+renderer = metal
+macos-non-native-fullscreen = true
+
+# Shell Integration
+shell-integration = zsh
+shell-integration-features = cursor,title,sudo
+
+# tmux Integration - avoid key conflicts
+command = tmux-sessionizer
+
+# Keybindings - Using Ctrl+Shift to avoid conflicts with tmux/AeroSpace
+keybind = ctrl+shift+n=new_window
+keybind = ctrl+shift+t=new_tab
+keybind = ctrl+shift+w=close_surface
+keybind = ctrl+shift+enter=new_split:right
+keybind = ctrl+shift+backslash=new_split:down
+
+# Navigation
+keybind = ctrl+shift+h=goto_split:left
+keybind = ctrl+shift+j=goto_split:bottom
+keybind = ctrl+shift+k=goto_split:top
+keybind = ctrl+shift+l=goto_split:right
+
+# Tab management
+keybind = ctrl+shift+left_bracket=previous_tab
+keybind = ctrl+shift+right_bracket=next_tab
+keybind = ctrl+shift+1=goto_tab:1
+keybind = ctrl+shift+2=goto_tab:2
+keybind = ctrl+shift+3=goto_tab:3
+keybind = ctrl+shift+4=goto_tab:4
+keybind = ctrl+shift+5=goto_tab:5
+
+# Search and selection
+keybind = ctrl+shift+f=search
+keybind = ctrl+shift+c=copy
+keybind = ctrl+shift+v=paste
+
+# Quick terminal with Hyper key integration
+keybind = global:alt+cmd+ctrl+shift+grave_accent=toggle_quick_terminal
+
+# Font size adjustment
+keybind = ctrl+plus=increase_font_size:1
+keybind = ctrl+minus=decrease_font_size:1
+keybind = ctrl+zero=reset_font_size
+
+# Let tmux handle its own sequences
+keybind = unconsumed:ctrl+a>*=
+keybind = unconsumed:ctrl+b>*=
+keybind = unconsumed:ctrl+space>*=
+
+# URL handling
+click-repeat-interval = 300
+mouse-hide-while-typing = true
+
+# Copy on select
+copy-on-select = false  # Use explicit copy command
+
+# Advanced features
+focus-follows-mouse = false
+resize-overlay = true
+resize-overlay-position = center
+resize-overlay-duration = 750
+
+# Cursor configuration
+cursor-style = block
+cursor-style-blink = false
+
+# Terminal features
+bold-is-bright = false
+adjust-cell-width = 0
+adjust-cell-height = 0
+
+# Working directory
+working-directory = inherit

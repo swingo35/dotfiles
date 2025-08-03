@@ -1,0 +1,126 @@
+# AeroSpace Configuration for Multi-Monitor Development Setup
+# Hyper Key Strategy: Caps Lock = Cmd+Ctrl+Option+Shift
+
+# Core Configuration
+after-login-command = []
+after-startup-command = []
+
+# Behavior
+automatically-unhide-macos-hidden-apps = false
+default-root-container-layout = 'tiles'
+default-root-container-orientation = 'auto'
+
+# Normalize layout after startup
+enable-normalization-flatten-containers = true
+enable-normalization-opposite-orientation-for-nested-containers = true
+
+# Gaps and padding
+[gaps]
+inner.horizontal = 10
+inner.vertical = 10
+outer.left = 10
+outer.bottom = 10
+outer.top = 10
+outer.right = 10
+
+# Monitor assignments for 3-monitor setup
+# Primary (center): Development workspaces 1-3
+# Left: Communication and monitoring 4-6  
+# Right: Documentation and browser 7-9
+[workspace-to-monitor-force-assignment]
+1 = 'main'      # Code editor
+2 = 'main'      # Terminal/tmux sessions  
+3 = 'main'      # Development tools
+4 = 'secondary' # Communication (Slack, etc.)
+5 = 'secondary' # Monitoring/logs
+6 = 'secondary' # Database tools
+7 = '3'         # Browser/docs
+8 = '3'         # Design tools
+9 = '3'         # Miscellaneous
+
+# Application assignments
+[[on-window-detected]]
+if.app-id = 'com.microsoft.VSCode'
+run = 'move-node-to-workspace 1'
+
+[[on-window-detected]]
+if.app-id = 'com.mitchellh.ghostty'
+run = 'move-node-to-workspace 2'
+
+[[on-window-detected]]
+if.app-id = 'com.google.Chrome'
+run = 'move-node-to-workspace 7'
+
+[[on-window-detected]]
+if.app-id = 'com.tinyspeck.slackmacgap'
+run = 'move-node-to-workspace 4'
+
+[[on-window-detected]]
+if.app-id = 'com.figma.Desktop'
+run = 'move-node-to-workspace 8'
+
+# Hyper Key Bindings (Caps Lock = Cmd+Ctrl+Option+Shift)
+[mode.main.binding]
+
+# Focus Management
+alt-cmd-ctrl-shift-h = 'focus left'
+alt-cmd-ctrl-shift-j = 'focus down'
+alt-cmd-ctrl-shift-k = 'focus up'
+alt-cmd-ctrl-shift-l = 'focus right'
+
+# Workspace Navigation
+alt-cmd-ctrl-shift-1 = 'workspace 1'
+alt-cmd-ctrl-shift-2 = 'workspace 2'
+alt-cmd-ctrl-shift-3 = 'workspace 3'
+alt-cmd-ctrl-shift-4 = 'workspace 4'
+alt-cmd-ctrl-shift-5 = 'workspace 5'
+alt-cmd-ctrl-shift-6 = 'workspace 6'
+alt-cmd-ctrl-shift-7 = 'workspace 7'
+alt-cmd-ctrl-shift-8 = 'workspace 8'
+alt-cmd-ctrl-shift-9 = 'workspace 9'
+
+# Move Windows to Workspaces (Hyper + Cmd + Number)
+alt-cmd-ctrl-shift-cmd-1 = 'move-node-to-workspace 1'
+alt-cmd-ctrl-shift-cmd-2 = 'move-node-to-workspace 2'
+alt-cmd-ctrl-shift-cmd-3 = 'move-node-to-workspace 3'
+alt-cmd-ctrl-shift-cmd-4 = 'move-node-to-workspace 4'
+alt-cmd-ctrl-shift-cmd-5 = 'move-node-to-workspace 5'
+alt-cmd-ctrl-shift-cmd-6 = 'move-node-to-workspace 6'
+alt-cmd-ctrl-shift-cmd-7 = 'move-node-to-workspace 7'
+alt-cmd-ctrl-shift-cmd-8 = 'move-node-to-workspace 8'
+alt-cmd-ctrl-shift-cmd-9 = 'move-node-to-workspace 9'
+
+# Window Movement (Hyper + Cmd + HJKL)
+alt-cmd-ctrl-shift-cmd-h = 'move left'
+alt-cmd-ctrl-shift-cmd-j = 'move down'
+alt-cmd-ctrl-shift-cmd-k = 'move up'
+alt-cmd-ctrl-shift-cmd-l = 'move right'
+
+# Layout Management
+alt-cmd-ctrl-shift-f = 'fullscreen'
+alt-cmd-ctrl-shift-space = 'layout floating tiling'
+alt-cmd-ctrl-shift-r = 'mode resize'
+
+# Application Launchers
+alt-cmd-ctrl-shift-return = 'exec-and-forget open -n /Applications/Ghostty.app'
+alt-cmd-ctrl-shift-c = 'exec-and-forget open -n /Applications/Google\ Chrome.app'
+alt-cmd-ctrl-shift-v = 'exec-and-forget open -n /Applications/Visual\ Studio\ Code.app'
+
+# Resize Mode
+[mode.resize.binding]
+h = 'resize width -50'
+j = 'resize height +50'
+k = 'resize height -50'
+l = 'resize width +50'
+enter = 'mode main'
+esc = 'mode main'
+
+# Service mode for system operations
+[mode.service.binding]
+r = ['reload-config', 'mode main']
+q = ['quit-aerospace', 'mode main']
+esc = 'mode main'
+
+# Quick access to service mode
+[mode.main.binding]
+alt-cmd-ctrl-shift-semicolon = 'mode service'

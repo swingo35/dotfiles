@@ -1,0 +1,448 @@
+# Global gitignore for modern development environment
+# This file contains patterns to ignore across all repositories
+
+# ===========================
+# Operating System Files
+# ===========================
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.AppleDouble
+.LSOverride
+Icon?
+
+# macOS Finder
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# macOS Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.nfs*
+
+# ===========================
+# Editor and IDE Files
+# ===========================
+
+# Vim
+*.swp
+*.swo
+*~
+.viminfo
+.vimrc.local
+.vimrc.bundles.local
+
+# Neovim
+.nvimlog
+.nvim/
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# VS Code
+.vscode/
+*.code-workspace
+.history/
+
+# JetBrains IDEs
+.idea/
+*.iml
+*.ipr
+*.iws
+.idea_modules/
+atlassian-ide-plugin.xml
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+*.sublime-settings
+
+# TextMate
+*.tmproj
+*.tmproject
+tmtags
+
+# ===========================
+# Development Tools
+# ===========================
+
+# tmux
+.tmux.conf.local
+
+# Git
+*.orig
+*.rej
+
+# SSH
+.ssh/
+id_rsa
+id_dsa
+id_ecdsa
+id_ed25519
+*.pem
+
+# GPG
+secring.*
+
+# ===========================
+# Language Specific
+# ===========================
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn-integrity
+.pnp.*
+.yarn/
+lerna-debug.log*
+
+# Bun
+.bun/
+bun.lockb
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.spyderproject
+.spyproject
+.ropeproject
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+cython_debug/
+
+# Rust
+target/
+Cargo.lock
+**/*.rs.bk
+
+# Go
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+vendor/
+go.work
+go.work.sum
+
+# Java
+*.class
+*.log
+*.ctxt
+.mtj.tmp/
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+hs_err_pid*
+
+# C/C++
+*.o
+*.a
+*.so
+*.dylib
+*.exe
+*.out
+*.app
+
+# ===========================
+# Package Managers
+# ===========================
+
+# Homebrew
+Brewfile.lock.json
+
+# CocoaPods
+Pods/
+*.xcworkspace
+
+# Carthage
+Carthage/
+
+# ===========================
+# Build and Temporary Files
+# ===========================
+
+# Build directories
+build/
+dist/
+target/
+out/
+.next/
+.nuxt/
+.output/
+.cache/
+.parcel-cache/
+.temp/
+.tmp/
+
+# Logs
+*.log
+logs/
+log/
+.log
+
+# Coverage reports
+coverage/
+*.lcov
+.nyc_output/
+.coverage
+htmlcov/
+.tox/
+.nox/
+.coverage.*
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# ===========================
+# Environment and Config
+# ===========================
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.envrc
+
+# API keys and secrets
+*secret*
+*SECRET*
+*.key
+*.pem
+.secrets/
+secrets.json
+
+# Configuration files that might contain sensitive data
+config.local.*
+.config.local
+*.local.json
+
+# ===========================
+# Databases
+# ===========================
+
+# SQLite
+*.db
+*.sqlite
+*.sqlite3
+
+# ===========================
+# Media and Assets
+# ===========================
+
+# Images
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.webp
+*.svg
+*.ico
+
+# Videos
+*.mp4
+*.avi
+*.mov
+*.wmv
+*.flv
+*.webm
+
+# Audio
+*.mp3
+*.wav
+*.flac
+*.aac
+
+# Documents
+*.pdf
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.ppt
+*.pptx
+
+# ===========================
+# Cloud and Deployment
+# ===========================
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# Docker
+.docker/
+
+# Kubernetes
+*.kubeconfig
+
+# AWS
+.aws/
+
+# ===========================
+# Development Environment
+# ===========================
+
+# Local development
+.local/
+.cache/
+.tmp/
+
+# Development databases
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Test files
+test-results/
+tests/__pycache__/
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+*.swp
+*.tmp
+
+# ===========================
+# AI and Claude Code
+# ===========================
+
+# Claude Code
+.claude/
+.claude.json
+CLAUDE_CONTEXT.md
+
+# AI generated files
+ai-generated/
+.ai-cache/
+
+# ===========================
+# Git Worktrees
+# ===========================
+
+# Worktree directories (assuming standard layout)
+worktrees/
+.worktrees/
+
+# ===========================
+# Monitoring and Analytics
+# ===========================
+
+# Sentry
+.sentryclirc
+
+# Analytics
+.analytics/
+
+# ===========================
+# Miscellaneous
+# ===========================
+
+# Temporary files
+*.temp
+*.temporary
+.temporary/
+
+# Lock files that shouldn't be committed
+*.lock
+!package-lock.json
+!yarn.lock
+!Cargo.lock
+!Gemfile.lock
+!composer.lock
+
+# Archive files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# System files
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
