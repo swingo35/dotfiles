@@ -1,15 +1,57 @@
-[
-  { "key": "C-b",     "description": "Enter tmux command prefix" },
-  { "key": "C-b c",   "description": "Create a new window" },
-  { "key": "C-b d",   "description": "Detach the current session" },
-  { "key": "C-b &",   "description": "Kill the current window" },
-  { "key": "C-b %",   "description": "Split pane vertically" },
-  { "key": "C-b \"",  "description": "Split pane horizontally" },
-  { "key": "C-b o",   "description": "Switch to the next pane" },
-  { "key": "C-b p",   "description": "Switch to the previous window" },
-  { "key": "C-b n",   "description": "Switch to the next window" },
-  { "key": "C-b [",   "description": "Enter copy mode for scrolling/search" },
-  { "key": "C-b ]",   "description": "Paste from the copy buffer" },
-  { "key": "C-b f",   "description": "Find window by name" },
-  { "key": "C-b ,",   "description": "Rename the current window" }
-]
+{
+  "source": "https://man.openbsd.org/tmux.1",
+  "keymaps": [
+    {
+      "key": "C-b",
+      "description": "Enter tmux command prefix"
+    },
+    {
+      "key": "C-b c",
+      "description": "Create a new window"
+    },
+    {
+      "key": "C-b d",
+      "description": "Detach the current session"
+    },
+    {
+      "key": "C-b &",
+      "description": "Kill the current window"
+    },
+    {
+      "key": "C-b %",
+      "description": "Split pane vertically"
+    },
+    {
+      "key": "C-b \"",
+      "description": "Split pane horizontally"
+    },
+    {
+      "key": "C-b o",
+      "description": "Switch to the next pane"
+    },
+    {
+      "key": "C-b p",
+      "description": "Switch to the previous window"
+    },
+    {
+      "key": "C-b n",
+      "description": "Switch to the next window"
+    },
+    {
+      "key": "C-b [",
+      "description": "Enter copy mode for scrolling/search"
+    },
+    {
+      "key": "C-b ]",
+      "description": "Paste from the copy buffer"
+    },
+    {
+      "key": "C-b f",
+      "description": "Find window by name"
+    },
+    {
+      "key": "C-b ,",
+      "description": "Rename the current window"
+    }
+  ]
+}
