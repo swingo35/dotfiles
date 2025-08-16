@@ -11,8 +11,11 @@ A complete, battle-tested configuration for macOS developers featuring window ma
 git clone <your-repo-url> ~/dotfiles
 cd ~/dotfiles && ./install.sh
 
+# Optional: symlink for zsh to source repo files
+ln -sfn ~/dotfiles ~/.dotfiles
+
 # Authenticate services
-gh auth login && claude auth login
+gh auth login && claude auth
 
 # Start developing
 tmux-sessionizer
@@ -187,10 +190,7 @@ Each tool has comprehensive documentation with setup guides, key bindings, and t
 
 **Performance monitoring:**
 ```bash
-# Check system health
-./scripts/health-check.sh
-
-# Profile startup times
+# Profile shell startup time
 time zsh -i -c exit
 ```
 

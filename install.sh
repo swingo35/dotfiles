@@ -168,7 +168,7 @@ setup_git_worktrees() {
     cp "$DOTFILES_DIR/scripts/monitor-detect.sh" ~/.local/bin/
     
     # Make tmux-sessionizer available globally
-    ln -sf "$DOTFILES_DIR/scripts/tmux-sessionizer.sh" ~/.local/bin/tmux-sessionizer
+    ln -sf "$DOTFILES_DIR/tmux/tmux-sessionizer.sh" ~/.local/bin/tmux-sessionizer
     
     chmod +x ~/.local/bin/*.sh ~/.local/bin/tmux-sessionizer
     

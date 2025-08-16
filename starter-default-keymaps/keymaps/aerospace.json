@@ -1,0 +1,14 @@
+[
+  { "key": "Alt+h / Alt+j / Alt+k / Alt+l",           "description": "Move focus left/down/up/right" },
+  { "key": "Alt+Shift+h / Alt+Shift+j / Alt+Shift+k / Alt+Shift+l", "description": "Move window left/down/up/right" },
+  { "key": "Alt+- / Alt+=",                              "description": "Resize window: shrink/enlarge (smart resize)" },
+  { "key": "Alt+1…9 / Alt+a…z",                         "description": "Switch to workspace 1–9 or a–z" },
+  { "key": "Alt+Shift+Tab",                             "description": "Send the current workspace to another monitor" },
+  { "key": "Alt+, / Alt+/",                             "description": "Switch layout between accordion and tiling mode" },
+  { "key": "Alt+Shift+Space",                           "description": "Toggle floating/tiling on the current window" },
+  { "key": "Alt+Shift+;",                              "description": "Enter service mode" },
+  { "key": "Esc (service)",                            "description": "Reload config and return to main mode" },
+  { "key": "r (service)",                             "description": "Reset layout (flatten workspace tree)" },
+  { "key": "f (service)",                             "description": "Toggle between floating and tiling layout" },
+  { "key": "Backspace (service)",                     "description": "Close all windows except the current one" }
+]
