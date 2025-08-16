@@ -1,16 +1,61 @@
-[
-  { "key": "j / k",    "description": "Move down/up in lists" },
-  { "key": "h / l",    "description": "Move between panels (left/right)" },
-  { "key": "1–5",      "description": "Focus a specific panel (1 through 5)" },
-  { "key": "[ / ]",    "description": "Move between tabs within a panel" },
-  { "key": "s",        "description": "Stage or unstage the selected file" },
-  { "key": "c",        "description": "Open the commit panel" },
-  { "key": "p",        "description": "Push to remote" },
-  { "key": "P",        "description": "Pull from remote" },
-  { "key": "/",        "description": "Search" },
-  { "key": "PgUp / PgDn", "description": "Scroll content (e.g. log or diff views)" },
-  { "key": "Space",    "description": "Select item or toggle checkbox" },
-  { "key": "Enter",    "description": "Enter panel or confirm action" },
-  { "key": "Esc",      "description": "Cancel action or close popup" },
-  { "key": "q",        "description": "Quit the application" }
-]
+{
+  "source": "https://github.com/jesseduffield/lazygit/blob/master/docs/keybindings.md",
+  "keymaps": [
+    {
+      "key": "j / k",
+      "description": "Move down/up in lists"
+    },
+    {
+      "key": "h / l",
+      "description": "Move between panels (left/right)"
+    },
+    {
+      "key": "1–5",
+      "description": "Focus a specific panel (1 through 5)"
+    },
+    {
+      "key": "[ / ]",
+      "description": "Move between tabs within a panel"
+    },
+    {
+      "key": "s",
+      "description": "Stage or unstage the selected file"
+    },
+    {
+      "key": "c",
+      "description": "Open the commit panel"
+    },
+    {
+      "key": "p",
+      "description": "Push to remote"
+    },
+    {
+      "key": "P",
+      "description": "Pull from remote"
+    },
+    {
+      "key": "/",
+      "description": "Search"
+    },
+    {
+      "key": "PgUp / PgDn",
+      "description": "Scroll content (e.g. log or diff views)"
+    },
+    {
+      "key": "Space",
+      "description": "Select item or toggle checkbox"
+    },
+    {
+      "key": "Enter",
+      "description": "Enter panel or confirm action"
+    },
+    {
+      "key": "Esc",
+      "description": "Cancel action or close popup"
+    },
+    {
+      "key": "q",
+      "description": "Quit the application"
+    }
+  ]
+}
