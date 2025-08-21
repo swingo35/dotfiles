@@ -1,0 +1,80 @@
+{
+  "version": "1.0.0",
+  "description": "Example validation rules for keybinding configurations",
+  "rules": [
+    {
+      "id": "system-modifiers",
+      "type": "required-modifiers",
+      "name": "System Reserved Modifier Keys",
+      "description": "Ensure system-level actions use specific modifier combinations",
+      "contexts": ["global", "system"],
+      "modifiers": ["cmd"],
+      "severity": "warning"
+    },
+    {
+      "id": "forbidden-function-keys",
+      "type": "forbidden-keys",
+      "name": "Avoid Function Keys",
+      "description": "Function keys are hard to reach and should be avoided",
+      "keys": ["f1", "f2", "f3", "f4", "f5", "f6", "f7", "f8", "f9", "f10", "f11", "f12"],
+      "severity": "warning"
+    },
+    {
+      "id": "system-reserved-keys",
+      "type": "forbidden-keys",
+      "name": "System Reserved Keys",
+      "description": "These keys are reserved by macOS and should not be overridden",
+      "keys": ["cmd+space", "cmd+tab", "cmd+q", "cmd+option+esc"],
+      "severity": "error"
+    },
+    {
+      "id": "tmux-isolation",
+      "type": "context-isolation",
+      "name": "tmux Context Isolation",
+      "description": "tmux keybindings should be isolated to avoid conflicts",
+      "contexts": ["tmux", "tmux-copy-mode"],
+      "severity": "info"
+    },
+    {
+      "id": "ergonomic-guidelines",
+      "type": "ergonomic-checks",
+      "name": "Ergonomic Guidelines",
+      "description": "Ensure keybindings follow ergonomic best practices",
+      "maxModifiers": 3,
+      "difficultKeys": ["f1", "f2", "f3", "f4", "f5", "f6", "f7", "f8", "f9", "f10", "f11", "f12", "home", "end", "pageup", "pagedown"],
+      "severity": "warning"
+    },
+    {
+      "id": "common-patterns",
+      "type": "pattern-consistency",
+      "name": "Common Pattern Consistency",
+      "description": "Similar actions should use consistent key patterns",
+      "patterns": [
+        {
+          "actions": ["copy", "cut", "paste"],
+          "modifiers": ["cmd"],
+          "severity": "info"
+        },
+        {
+          "actions": ["save", "open", "new"],
+          "modifiers": ["cmd"],
+          "severity": "info"
+        }
+      ]
+    },
+    {
+      "id": "frequency-optimization",
+      "type": "frequency-checks",
+      "name": "Frequency-Based Optimization",
+      "description": "High-frequency actions should use easy-to-reach keys",
+      "highFrequencyKeys": ["a", "s", "d", "f", "j", "k", "l", "space", "tab"],
+      "maxModifiersForHighFreq": 2,
+      "severity": "info"
+    }
+  ],
+  "settings": {
+    "strictMode": false,
+    "autoFix": false,
+    "reportUnknownRules": true
+  }
+}

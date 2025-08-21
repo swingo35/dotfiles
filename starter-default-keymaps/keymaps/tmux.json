@@ -1,57 +1,179 @@
 {
+  "tool": "tmux",
+  "name": "tmux Terminal Multiplexer",
+  "version": "3.4",
   "source": "https://man.openbsd.org/tmux.1",
+  "lastUpdated": "2024-01-16",
+  "description": "Terminal multiplexer for managing multiple terminal sessions",
   "keymaps": [
     {
+      "id": "tmux-prefix",
       "key": "C-b",
-      "description": "Enter tmux command prefix"
+      "modifiers": ["ctrl"],
+      "keySequence": null,
+      "description": "Enter tmux command prefix",
+      "category": "Core",
+      "context": "tmux",
+      "tags": ["prefix", "essential", "command-mode"],
+      "difficulty": "beginner",
+      "frequency": "high",
+      "alternatives": []
     },
     {
+      "id": "tmux-new-window",
       "key": "C-b c",
-      "description": "Create a new window"
+      "modifiers": ["ctrl"],
+      "keySequence": ["C-b", "c"],
+      "description": "Create a new window",
+      "category": "Windows",
+      "context": "tmux",
+      "tags": ["window", "create", "new", "essential"],
+      "difficulty": "beginner",
+      "frequency": "high",
+      "alternatives": []
     },
     {
+      "id": "tmux-detach",
       "key": "C-b d",
-      "description": "Detach the current session"
+      "modifiers": ["ctrl"],
+      "keySequence": ["C-b", "d"],
+      "description": "Detach the current session",
+      "category": "Sessions",
+      "context": "tmux",
+      "tags": ["session", "detach", "essential"],
+      "difficulty": "beginner",
+      "frequency": "high",
+      "alternatives": []
     },
     {
+      "id": "tmux-kill-window",
       "key": "C-b &",
-      "description": "Kill the current window"
+      "modifiers": ["ctrl"],
+      "keySequence": ["C-b", "&"],
+      "description": "Kill the current window",
+      "category": "Windows",
+      "context": "tmux",
+      "tags": ["window", "kill", "close", "destructive"],
+      "difficulty": "intermediate",
+      "frequency": "medium",
+      "alternatives": []
     },
     {
+      "id": "tmux-split-vertical",
       "key": "C-b %",
-      "description": "Split pane vertically"
+      "modifiers": ["ctrl"],
+      "keySequence": ["C-b", "%"],
+      "description": "Split pane vertically",
+      "category": "Panes",
+      "context": "tmux",
+      "tags": ["pane", "split", "vertical", "layout"],
+      "difficulty": "beginner",
+      "frequency": "high",
+      "alternatives": []
     },
     {
+      "id": "tmux-split-horizontal",
       "key": "C-b \"",
-      "description": "Split pane horizontally"
+      "modifiers": ["ctrl"],
+      "keySequence": ["C-b", "\""],
+      "description": "Split pane horizontally",
+      "category": "Panes",
+      "context": "tmux",
+      "tags": ["pane", "split", "horizontal", "layout"],
+      "difficulty": "beginner",
+      "frequency": "high",
+      "alternatives": []
     },
     {
+      "id": "tmux-next-pane",
       "key": "C-b o",
-      "description": "Switch to the next pane"
+      "modifiers": ["ctrl"],
+      "keySequence": ["C-b", "o"],
+      "description": "Switch to the next pane",
+      "category": "Panes",
+      "context": "tmux",
+      "tags": ["pane", "navigation", "switch", "next"],
+      "difficulty": "beginner",
+      "frequency": "high",
+      "alternatives": []
     },
     {
+      "id": "tmux-prev-window",
       "key": "C-b p",
-      "description": "Switch to the previous window"
+      "modifiers": ["ctrl"],
+      "keySequence": ["C-b", "p"],
+      "description": "Switch to the previous window",
+      "category": "Windows",
+      "context": "tmux",
+      "tags": ["window", "navigation", "switch", "previous"],
+      "difficulty": "beginner",
+      "frequency": "high",
+      "alternatives": []
     },
     {
+      "id": "tmux-next-window",
       "key": "C-b n",
-      "description": "Switch to the next window"
+      "modifiers": ["ctrl"],
+      "keySequence": ["C-b", "n"],
+      "description": "Switch to the next window",
+      "category": "Windows",
+      "context": "tmux",
+      "tags": ["window", "navigation", "switch", "next"],
+      "difficulty": "beginner",
+      "frequency": "high",
+      "alternatives": []
     },
     {
+      "id": "tmux-copy-mode",
       "key": "C-b [",
-      "description": "Enter copy mode for scrolling/search"
+      "modifiers": ["ctrl"],
+      "keySequence": ["C-b", "["],
+      "description": "Enter copy mode for scrolling/search",
+      "category": "Copy & Paste",
+      "context": "tmux",
+      "tags": ["copy-mode", "scroll", "search", "navigation"],
+      "difficulty": "intermediate",
+      "frequency": "medium",
+      "alternatives": []
     },
     {
+      "id": "tmux-paste",
       "key": "C-b ]",
-      "description": "Paste from the copy buffer"
+      "modifiers": ["ctrl"],
+      "keySequence": ["C-b", "]"],
+      "description": "Paste from the copy buffer",
+      "category": "Copy & Paste",
+      "context": "tmux",
+      "tags": ["paste", "buffer", "clipboard"],
+      "difficulty": "intermediate",
+      "frequency": "medium",
+      "alternatives": []
     },
     {
+      "id": "tmux-find-window",
       "key": "C-b f",
-      "description": "Find window by name"
+      "modifiers": ["ctrl"],
+      "keySequence": ["C-b", "f"],
+      "description": "Find window by name",
+      "category": "Windows",
+      "context": "tmux",
+      "tags": ["window", "find", "search", "navigation"],
+      "difficulty": "intermediate",
+      "frequency": "medium",
+      "alternatives": []
     },
     {
+      "id": "tmux-rename-window",
       "key": "C-b ,",
-      "description": "Rename the current window"
+      "modifiers": ["ctrl"],
+      "keySequence": ["C-b", ","],
+      "description": "Rename the current window",
+      "category": "Windows",
+      "context": "tmux",
+      "tags": ["window", "rename", "management"],
+      "difficulty": "intermediate",
+      "frequency": "medium",
+      "alternatives": []
     }
   ]
 }

@@ -1,0 +1,320 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2024-01-16",
+  "description": "Cross-tool shortcut relationships and patterns for enhanced learning",
+  "relationships": {
+    "copy_paste_pattern": {
+      "name": "Copy & Paste Pattern",
+      "description": "Universal copy/paste shortcuts across tools",
+      "pattern": "Cmd+C/Cmd+V",
+      "keybinds": [
+        {
+          "tool": "macos",
+          "id": "copy",
+          "consistency": "universal"
+        },
+        {
+          "tool": "macos", 
+          "id": "paste",
+          "consistency": "universal"
+        },
+        {
+          "tool": "ghostty",
+          "id": "ghostty-copy",
+          "consistency": "universal"
+        },
+        {
+          "tool": "ghostty",
+          "id": "ghostty-paste", 
+          "consistency": "universal"
+        }
+      ],
+      "learningTip": "This pattern works consistently across all macOS applications"
+    },
+    "new_tab_pattern": {
+      "name": "New Tab Pattern",
+      "description": "Cmd+T creates new tabs across applications",
+      "pattern": "Cmd+T",
+      "keybinds": [
+        {
+          "tool": "macos",
+          "id": "browser-new-tab",
+          "consistency": "universal"
+        },
+        {
+          "tool": "ghostty",
+          "id": "ghostty-new-tab",
+          "consistency": "universal"
+        }
+      ],
+      "learningTip": "Cmd+T is the universal shortcut for creating new tabs"
+    },
+    "close_pattern": {
+      "name": "Close Pattern",
+      "description": "Cmd+W closes current window/tab",
+      "pattern": "Cmd+W", 
+      "keybinds": [
+        {
+          "tool": "macos",
+          "id": "close-window",
+          "consistency": "universal"
+        },
+        {
+          "tool": "macos",
+          "id": "browser-close-tab",
+          "consistency": "universal"
+        },
+        {
+          "tool": "ghostty",
+          "id": "ghostty-close-tab",
+          "consistency": "universal"
+        }
+      ],
+      "learningTip": "Cmd+W consistently closes the current item (window, tab, document)"
+    },
+    "quit_pattern": {
+      "name": "Quit Application Pattern",
+      "description": "Cmd+Q quits applications",
+      "pattern": "Cmd+Q",
+      "keybinds": [
+        {
+          "tool": "macos",
+          "id": "quit-app", 
+          "consistency": "universal"
+        },
+        {
+          "tool": "ghostty",
+          "id": "ghostty-quit",
+          "consistency": "universal"
+        }
+      ],
+      "learningTip": "Cmd+Q is the standard way to quit any macOS application"
+    },
+    "navigation_arrows": {
+      "name": "Arrow Navigation Pattern",
+      "description": "Cmd+Arrow keys for navigation",
+      "pattern": "Cmd+Arrow",
+      "keybinds": [
+        {
+          "tool": "macos",
+          "id": "line-beginning",
+          "consistency": "universal"
+        },
+        {
+          "tool": "macos",
+          "id": "line-end",
+          "consistency": "universal"
+        },
+        {
+          "tool": "macos",
+          "id": "document-beginning",
+          "consistency": "universal"
+        },
+        {
+          "tool": "macos", 
+          "id": "document-end",
+          "consistency": "universal"
+        },
+        {
+          "tool": "macos",
+          "id": "parent-folder",
+          "consistency": "contextual"
+        },
+        {
+          "tool": "macos",
+          "id": "open-selected",
+          "consistency": "contextual"
+        }
+      ],
+      "learningTip": "Cmd+Arrow provides consistent navigation: Left/Right for line boundaries, Up/Down for document boundaries"
+    },
+    "option_navigation": {
+      "name": "Option Word Navigation",
+      "description": "Option+Arrow for word-by-word movement",
+      "pattern": "Option+Arrow",
+      "keybinds": [
+        {
+          "tool": "macos",
+          "id": "word-left",
+          "consistency": "universal"
+        },
+        {
+          "tool": "macos",
+          "id": "word-right",
+          "consistency": "universal"
+        }
+      ],
+      "learningTip": "Option+Arrow moves cursor by whole words in any text field"
+    },
+    "prefix_pattern": {
+      "name": "Prefix Key Pattern",
+      "description": "Tools that use prefix keys for command modes",
+      "pattern": "Prefix + Command",
+      "keybinds": [
+        {
+          "tool": "tmux",
+          "id": "tmux-prefix",
+          "consistency": "tool-specific"
+        }
+      ],
+      "learningTip": "tmux uses Ctrl+B as a prefix for all commands. Learn the prefix first, then the commands."
+    },
+    "pane_management": {
+      "name": "Pane/Split Management",
+      "description": "Different approaches to managing panes across tools",
+      "pattern": "Various",
+      "keybinds": [
+        {
+          "tool": "tmux",
+          "id": "tmux-split-vertical",
+          "consistency": "tool-specific",
+          "note": "Uses % symbol"
+        },
+        {
+          "tool": "tmux", 
+          "id": "tmux-split-horizontal",
+          "consistency": "tool-specific",
+          "note": "Uses \" symbol"
+        },
+        {
+          "tool": "ghostty",
+          "id": "ghostty-split-right",
+          "consistency": "tool-specific",
+          "note": "Uses Cmd+D"
+        },
+        {
+          "tool": "ghostty",
+          "id": "ghostty-split-down", 
+          "consistency": "tool-specific",
+          "note": "Uses Cmd+Shift+D"
+        }
+      ],
+      "learningTip": "Each tool has its own pane splitting approach. tmux uses symbols (%, \"), Ghostty uses Cmd+D variants."
+    },
+    "window_switching": {
+      "name": "Window/Tab Switching",
+      "description": "Patterns for switching between windows or tabs",
+      "pattern": "Various",
+      "keybinds": [
+        {
+          "tool": "macos",
+          "id": "app-switcher",
+          "consistency": "universal",
+          "note": "Between applications"
+        },
+        {
+          "tool": "macos",
+          "id": "window-switcher", 
+          "consistency": "universal",
+          "note": "Within same application"
+        },
+        {
+          "tool": "macos",
+          "id": "browser-prev-tab",
+          "consistency": "contextual",
+          "note": "Browser tabs"
+        },
+        {
+          "tool": "macos",
+          "id": "browser-next-tab",
+          "consistency": "contextual", 
+          "note": "Browser tabs"
+        },
+        {
+          "tool": "tmux",
+          "id": "tmux-next-window",
+          "consistency": "tool-specific",
+          "note": "tmux windows"
+        },
+        {
+          "tool": "tmux",
+          "id": "tmux-prev-window",
+          "consistency": "tool-specific",
+          "note": "tmux windows"
+        }
+      ],
+      "learningTip": "Learn the hierarchy: Cmd+Tab (apps) > Cmd+` (windows) > tool-specific (tabs/panes)"
+    },
+    "search_patterns": {
+      "name": "Search Patterns",
+      "description": "Different search mechanisms across tools",
+      "pattern": "Cmd+F family",
+      "keybinds": [
+        {
+          "tool": "macos",
+          "id": "spotlight-search",
+          "consistency": "universal",
+          "note": "System-wide search"
+        },
+        {
+          "tool": "macos",
+          "id": "browser-find",
+          "consistency": "universal", 
+          "note": "In-page search"
+        },
+        {
+          "tool": "macos",
+          "id": "browser-find-next",
+          "consistency": "universal",
+          "note": "Next search result"
+        },
+        {
+          "tool": "tmux",
+          "id": "tmux-find-window",
+          "consistency": "tool-specific",
+          "note": "Find tmux window"
+        }
+      ],
+      "learningTip": "Cmd+Space (global), Cmd+F (in-app), Cmd+G (next result) form a consistent search pattern"
+    }
+  },
+  "consistencyLevels": {
+    "universal": {
+      "name": "Universal",
+      "description": "Works the same way across all macOS applications",
+      "color": "#10B981",
+      "confidence": "high"
+    },
+    "contextual": {
+      "name": "Contextual", 
+      "description": "Works similarly in related contexts (e.g., all browsers)",
+      "color": "#F59E0B",
+      "confidence": "medium"
+    },
+    "tool-specific": {
+      "name": "Tool-Specific",
+      "description": "Unique to this specific tool or application",
+      "color": "#EF4444",
+      "confidence": "low"
+    }
+  },
+  "learningStrategies": {
+    "progressive_complexity": {
+      "name": "Progressive Complexity",
+      "description": "Start with universal patterns, then learn tool-specific ones",
+      "steps": [
+        "Master universal patterns (copy/paste, new/close)",
+        "Learn contextual patterns (browser navigation)",
+        "Practice tool-specific patterns (tmux prefix commands)"
+      ]
+    },
+    "pattern_recognition": {
+      "name": "Pattern Recognition",
+      "description": "Group shortcuts by common patterns rather than by tool",
+      "benefits": [
+        "Faster memorization through pattern association",
+        "Better transfer between similar tools", 
+        "Reduced cognitive load"
+      ]
+    },
+    "muscle_memory": {
+      "name": "Muscle Memory Development",
+      "description": "Practice shortcuts in realistic usage scenarios",
+      "recommendations": [
+        "Practice universal patterns across multiple applications",
+        "Use spaced repetition for tool-specific shortcuts",
+        "Combine shortcuts in realistic workflows"
+      ]
+    }
+  }
+}

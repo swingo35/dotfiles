@@ -1,173 +1,790 @@
 {
+  "tool": "ghostty",
+  "name": "Ghostty Terminal Emulator",
+  "version": "1.0",
   "source": "https://ghostty.org/docs/config/keybindings",
+  "lastUpdated": "2025-08-20",
+  "description": "Modern terminal emulator with GPU acceleration",
   "keymaps": [
     {
+      "id": "ghostty-new-window",
       "key": "Cmd+N",
-      "description": "New window"
+      "modifiers": ["cmd"],
+      "keySequence": null,
+      "description": "New window",
+      "category": "Windows",
+      "context": "ghostty",
+      "tags": ["window", "new", "create"],
+      "difficulty": "beginner",
+      "frequency": "medium",
+      "alternatives": []
     },
     {
+      "id": "ghostty-close-window",
       "key": "Cmd+Shift+W",
-      "description": "Close window"
+      "modifiers": ["cmd", "shift"],
+      "keySequence": null,
+      "description": "Close window",
+      "category": "Windows",
+      "context": "ghostty",
+      "tags": ["window", "close"],
+      "difficulty": "beginner",
+      "frequency": "medium",
+      "alternatives": []
     },
     {
+      "id": "ghostty-close-all-windows",
       "key": "Cmd+Shift+Option+W",
-      "description": "Close all windows"
+      "modifiers": ["cmd", "shift", "option"],
+      "keySequence": null,
+      "description": "Close all windows",
+      "category": "Windows",
+      "context": "ghostty",
+      "tags": ["window", "close", "all"],
+      "difficulty": "advanced",
+      "frequency": "low",
+      "alternatives": []
     },
     {
-      "key": "Cmd+Enter / Cmd+Ctrl+F",
-      "description": "Toggle fullscreen"
+      "id": "ghostty-fullscreen",
+      "key": "Cmd+Enter",
+      "modifiers": ["cmd"],
+      "keySequence": null,
+      "description": "Toggle fullscreen",
+      "category": "Windows",
+      "context": "ghostty",
+      "tags": ["fullscreen", "toggle", "view"],
+      "difficulty": "intermediate",
+      "frequency": "medium",
+      "alternatives": ["Cmd+Ctrl+F"]
     },
     {
+      "id": "ghostty-quit",
       "key": "Cmd+Q",
-      "description": "Quit application"
+      "modifiers": ["cmd"],
+      "keySequence": null,
+      "description": "Quit application",
+      "category": "Application",
+      "context": "ghostty",
+      "tags": ["quit", "exit", "application"],
+      "difficulty": "beginner",
+      "frequency": "medium",
+      "alternatives": []
     },
     {
+      "id": "ghostty-new-tab",
       "key": "Cmd+T",
-      "description": "New tab"
+      "modifiers": ["cmd"],
+      "keySequence": null,
+      "description": "New tab",
+      "category": "Tabs",
+      "context": "ghostty",
+      "tags": ["tab", "new", "create", "essential"],
+      "difficulty": "beginner",
+      "frequency": "high",
+      "alternatives": []
     },
     {
+      "id": "ghostty-close-tab",
       "key": "Cmd+W",
-      "description": "Close tab or surface"
+      "modifiers": ["cmd"],
+      "keySequence": null,
+      "description": "Close tab or surface",
+      "category": "Tabs",
+      "context": "ghostty",
+      "tags": ["tab", "close", "essential"],
+      "difficulty": "beginner",
+      "frequency": "high",
+      "alternatives": []
     },
     {
+      "id": "ghostty-previous-tab",
       "key": "Cmd+Shift+[",
-      "description": "Previous tab"
+      "modifiers": ["cmd", "shift"],
+      "keySequence": null,
+      "description": "Previous tab",
+      "category": "Tabs",
+      "context": "ghostty",
+      "tags": ["tab", "navigation", "previous"],
+      "difficulty": "beginner",
+      "frequency": "high",
+      "alternatives": ["Ctrl+Shift+Tab"]
     },
     {
+      "id": "ghostty-next-tab",
       "key": "Cmd+Shift+]",
-      "description": "Next tab"
+      "modifiers": ["cmd", "shift"],
+      "keySequence": null,
+      "description": "Next tab",
+      "category": "Tabs",
+      "context": "ghostty",
+      "tags": ["tab", "navigation", "next"],
+      "difficulty": "beginner",
+      "frequency": "high",
+      "alternatives": ["Ctrl+Tab"]
     },
     {
-      "key": "Cmd+1 … Cmd+8",
-      "description": "Go to tab 1–8"
+      "id": "ghostty-goto-tab-1",
+      "key": "Cmd+1",
+      "modifiers": ["cmd"],
+      "keySequence": null,
+      "description": "Go to tab 1",
+      "category": "Tabs",
+      "context": "ghostty",
+      "tags": ["tab", "navigation", "direct"],
+      "difficulty": "beginner",
+      "frequency": "medium",
+      "alternatives": []
     },
     {
+      "id": "ghostty-goto-tab-2",
+      "key": "Cmd+2",
+      "modifiers": ["cmd"],
+      "keySequence": null,
+      "description": "Go to tab 2",
+      "category": "Tabs",
+      "context": "ghostty",
+      "tags": ["tab", "navigation", "direct"],
+      "difficulty": "beginner",
+      "frequency": "medium",
+      "alternatives": []
+    },
+    {
+      "id": "ghostty-goto-tab-3",
+      "key": "Cmd+3",
+      "modifiers": ["cmd"],
+      "keySequence": null,
+      "description": "Go to tab 3",
+      "category": "Tabs",
+      "context": "ghostty",
+      "tags": ["tab", "navigation", "direct"],
+      "difficulty": "beginner",
+      "frequency": "medium",
+      "alternatives": []
+    },
+    {
+      "id": "ghostty-goto-tab-4",
+      "key": "Cmd+4",
+      "modifiers": ["cmd"],
+      "keySequence": null,
+      "description": "Go to tab 4",
+      "category": "Tabs",
+      "context": "ghostty",
+      "tags": ["tab", "navigation", "direct"],
+      "difficulty": "beginner",
+      "frequency": "medium",
+      "alternatives": []
+    },
+    {
+      "id": "ghostty-goto-tab-5",
+      "key": "Cmd+5",
+      "modifiers": ["cmd"],
+      "keySequence": null,
+      "description": "Go to tab 5",
+      "category": "Tabs",
+      "context": "ghostty",
+      "tags": ["tab", "navigation", "direct"],
+      "difficulty": "beginner",
+      "frequency": "medium",
+      "alternatives": []
+    },
+    {
+      "id": "ghostty-goto-tab-6",
+      "key": "Cmd+6",
+      "modifiers": ["cmd"],
+      "keySequence": null,
+      "description": "Go to tab 6",
+      "category": "Tabs",
+      "context": "ghostty",
+      "tags": ["tab", "navigation", "direct"],
+      "difficulty": "beginner",
+      "frequency": "medium",
+      "alternatives": []
+    },
+    {
+      "id": "ghostty-goto-tab-7",
+      "key": "Cmd+7",
+      "modifiers": ["cmd"],
+      "keySequence": null,
+      "description": "Go to tab 7",
+      "category": "Tabs",
+      "context": "ghostty",
+      "tags": ["tab", "navigation", "direct"],
+      "difficulty": "beginner",
+      "frequency": "medium",
+      "alternatives": []
+    },
+    {
+      "id": "ghostty-goto-tab-8",
+      "key": "Cmd+8",
+      "modifiers": ["cmd"],
+      "keySequence": null,
+      "description": "Go to tab 8",
+      "category": "Tabs",
+      "context": "ghostty",
+      "tags": ["tab", "navigation", "direct"],
+      "difficulty": "beginner",
+      "frequency": "medium",
+      "alternatives": []
+    },
+    {
+      "id": "ghostty-goto-last-tab",
       "key": "Cmd+9",
-      "description": "Go to last tab"
+      "modifiers": ["cmd"],
+      "keySequence": null,
+      "description": "Go to last tab",
+      "category": "Tabs",
+      "context": "ghostty",
+      "tags": ["tab", "navigation", "last"],
+      "difficulty": "beginner",
+      "frequency": "medium",
+      "alternatives": []
     },
     {
+      "id": "ghostty-split-right",
       "key": "Cmd+D",
-      "description": "New split (right)"
+      "modifiers": ["cmd"],
+      "keySequence": null,
+      "description": "New split (right)",
+      "category": "Splits",
+      "context": "ghostty",
+      "tags": ["split", "pane", "vertical", "right"],
+      "difficulty": "intermediate",
+      "frequency": "medium",
+      "alternatives": []
     },
     {
+      "id": "ghostty-split-down",
       "key": "Cmd+Shift+D",
-      "description": "New split (down)"
+      "modifiers": ["cmd", "shift"],
+      "keySequence": null,
+      "description": "New split (down)",
+      "category": "Splits",
+      "context": "ghostty",
+      "tags": ["split", "pane", "horizontal", "down"],
+      "difficulty": "intermediate",
+      "frequency": "medium",
+      "alternatives": []
     },
     {
+      "id": "ghostty-previous-split",
       "key": "Cmd+[",
-      "description": "Focus previous split"
+      "modifiers": ["cmd"],
+      "keySequence": null,
+      "description": "Focus previous split",
+      "category": "Splits",
+      "context": "ghostty",
+      "tags": ["split", "focus", "navigation", "previous"],
+      "difficulty": "intermediate",
+      "frequency": "medium",
+      "alternatives": []
     },
     {
+      "id": "ghostty-next-split",
       "key": "Cmd+]",
-      "description": "Focus next split"
+      "modifiers": ["cmd"],
+      "keySequence": null,
+      "description": "Focus next split",
+      "category": "Splits",
+      "context": "ghostty",
+      "tags": ["split", "focus", "navigation", "next"],
+      "difficulty": "intermediate",
+      "frequency": "medium",
+      "alternatives": []
     },
     {
+      "id": "ghostty-split-up",
       "key": "Cmd+Option+Up",
-      "description": "Focus split up"
+      "modifiers": ["cmd", "option"],
+      "keySequence": null,
+      "description": "Focus split up",
+      "category": "Splits",
+      "context": "ghostty",
+      "tags": ["split", "focus", "navigation", "up"],
+      "difficulty": "intermediate",
+      "frequency": "medium",
+      "alternatives": []
     },
     {
+      "id": "ghostty-split-down",
       "key": "Cmd+Option+Down",
-      "description": "Focus split down"
+      "modifiers": ["cmd", "option"],
+      "keySequence": null,
+      "description": "Focus split down",
+      "category": "Splits",
+      "context": "ghostty",
+      "tags": ["split", "focus", "navigation", "down"],
+      "difficulty": "intermediate",
+      "frequency": "medium",
+      "alternatives": []
     },
     {
+      "id": "ghostty-split-left",
       "key": "Cmd+Option+Left",
-      "description": "Focus split left"
+      "modifiers": ["cmd", "option"],
+      "keySequence": null,
+      "description": "Focus split left",
+      "category": "Splits",
+      "context": "ghostty",
+      "tags": ["split", "focus", "navigation", "left"],
+      "difficulty": "intermediate",
+      "frequency": "medium",
+      "alternatives": []
     },
     {
+      "id": "ghostty-split-right",
       "key": "Cmd+Option+Right",
-      "description": "Focus split right"
+      "modifiers": ["cmd", "option"],
+      "keySequence": null,
+      "description": "Focus split right",
+      "category": "Splits",
+      "context": "ghostty",
+      "tags": ["split", "focus", "navigation", "right"],
+      "difficulty": "intermediate",
+      "frequency": "medium",
+      "alternatives": []
     },
     {
+      "id": "ghostty-toggle-split-zoom",
       "key": "Cmd+Shift+Enter",
-      "description": "Toggle split zoom"
+      "modifiers": ["cmd", "shift"],
+      "keySequence": null,
+      "description": "Toggle split zoom",
+      "category": "Splits",
+      "context": "ghostty",
+      "tags": ["split", "zoom", "toggle", "maximize"],
+      "difficulty": "intermediate",
+      "frequency": "medium",
+      "alternatives": []
     },
     {
+      "id": "ghostty-resize-split-up",
       "key": "Cmd+Ctrl+Up",
-      "description": "Resize split up"
+      "modifiers": ["cmd", "ctrl"],
+      "keySequence": null,
+      "description": "Resize split up",
+      "category": "Splits",
+      "context": "ghostty",
+      "tags": ["split", "resize", "up"],
+      "difficulty": "advanced",
+      "frequency": "low",
+      "alternatives": []
     },
     {
+      "id": "ghostty-resize-split-down",
       "key": "Cmd+Ctrl+Down",
-      "description": "Resize split down"
+      "modifiers": ["cmd", "ctrl"],
+      "keySequence": null,
+      "description": "Resize split down",
+      "category": "Splits",
+      "context": "ghostty",
+      "tags": ["split", "resize", "down"],
+      "difficulty": "advanced",
+      "frequency": "low",
+      "alternatives": []
     },
     {
+      "id": "ghostty-resize-split-left",
       "key": "Cmd+Ctrl+Left",
-      "description": "Resize split left"
+      "modifiers": ["cmd", "ctrl"],
+      "keySequence": null,
+      "description": "Resize split left",
+      "category": "Splits",
+      "context": "ghostty",
+      "tags": ["split", "resize", "left"],
+      "difficulty": "advanced",
+      "frequency": "low",
+      "alternatives": []
     },
     {
+      "id": "ghostty-resize-split-right",
       "key": "Cmd+Ctrl+Right",
-      "description": "Resize split right"
+      "modifiers": ["cmd", "ctrl"],
+      "keySequence": null,
+      "description": "Resize split right",
+      "category": "Splits",
+      "context": "ghostty",
+      "tags": ["split", "resize", "right"],
+      "difficulty": "advanced",
+      "frequency": "low",
+      "alternatives": []
     },
     {
+      "id": "ghostty-equalize-splits",
       "key": "Cmd+Ctrl+=",
-      "description": "Equalize splits"
+      "modifiers": ["cmd", "ctrl"],
+      "keySequence": null,
+      "description": "Equalize splits",
+      "category": "Splits",
+      "context": "ghostty",
+      "tags": ["split", "equalize", "balance"],
+      "difficulty": "advanced",
+      "frequency": "low",
+      "alternatives": []
     },
     {
+      "id": "ghostty-copy",
       "key": "Cmd+C",
-      "description": "Copy selection"
+      "modifiers": ["cmd"],
+      "keySequence": null,
+      "description": "Copy selection",
+      "category": "Copy & Paste",
+      "context": "ghostty",
+      "tags": ["copy", "clipboard", "essential"],
+      "difficulty": "beginner",
+      "frequency": "high",
+      "alternatives": []
     },
     {
+      "id": "ghostty-paste",
       "key": "Cmd+V",
-      "description": "Paste from clipboard"
+      "modifiers": ["cmd"],
+      "keySequence": null,
+      "description": "Paste from clipboard",
+      "category": "Copy & Paste",
+      "context": "ghostty",
+      "tags": ["paste", "clipboard", "essential"],
+      "difficulty": "beginner",
+      "frequency": "high",
+      "alternatives": []
     },
     {
+      "id": "ghostty-paste-selection",
+      "key": "Cmd+Shift+V",
+      "modifiers": ["cmd", "shift"],
+      "keySequence": null,
+      "description": "Paste from selection",
+      "category": "Copy & Paste",
+      "context": "ghostty",
+      "tags": ["paste", "selection"],
+      "difficulty": "intermediate",
+      "frequency": "medium",
+      "alternatives": []
+    },
+    {
+      "id": "ghostty-select-all",
+      "key": "Cmd+A",
+      "modifiers": ["cmd"],
+      "keySequence": null,
+      "description": "Select all",
+      "category": "Copy & Paste",
+      "context": "ghostty",
+      "tags": ["select", "all", "text"],
+      "difficulty": "beginner",
+      "frequency": "medium",
+      "alternatives": []
+    },
+    {
+      "id": "ghostty-scroll-to-top",
       "key": "Cmd+Home",
-      "description": "Scroll to top"
+      "modifiers": ["cmd"],
+      "keySequence": null,
+      "description": "Scroll to top",
+      "category": "Navigation",
+      "context": "ghostty",
+      "tags": ["scroll", "top", "navigation"],
+      "difficulty": "beginner",
+      "frequency": "medium",
+      "alternatives": []
     },
     {
+      "id": "ghostty-scroll-to-bottom",
       "key": "Cmd+End",
-      "description": "Scroll to bottom"
+      "modifiers": ["cmd"],
+      "keySequence": null,
+      "description": "Scroll to bottom",
+      "category": "Navigation",
+      "context": "ghostty",
+      "tags": ["scroll", "bottom", "navigation"],
+      "difficulty": "beginner",
+      "frequency": "medium",
+      "alternatives": []
     },
     {
+      "id": "ghostty-scroll-page-up",
       "key": "Cmd+Page Up",
-      "description": "Scroll page up"
+      "modifiers": ["cmd"],
+      "keySequence": null,
+      "description": "Scroll page up",
+      "category": "Navigation",
+      "context": "ghostty",
+      "tags": ["scroll", "page", "up"],
+      "difficulty": "beginner",
+      "frequency": "medium",
+      "alternatives": []
     },
     {
+      "id": "ghostty-scroll-page-down",
       "key": "Cmd+Page Down",
-      "description": "Scroll page down"
+      "modifiers": ["cmd"],
+      "keySequence": null,
+      "description": "Scroll page down",
+      "category": "Navigation",
+      "context": "ghostty",
+      "tags": ["scroll", "page", "down"],
+      "difficulty": "beginner",
+      "frequency": "medium",
+      "alternatives": []
     },
     {
+      "id": "ghostty-jump-previous-prompt",
       "key": "Cmd+Up",
-      "description": "Jump to previous prompt"
+      "modifiers": ["cmd"],
+      "keySequence": null,
+      "description": "Jump to previous prompt",
+      "category": "Navigation",
+      "context": "ghostty",
+      "tags": ["jump", "prompt", "previous"],
+      "difficulty": "intermediate",
+      "frequency": "high",
+      "alternatives": ["Cmd+Shift+Up"]
     },
     {
+      "id": "ghostty-jump-next-prompt",
       "key": "Cmd+Down",
-      "description": "Jump to next prompt"
+      "modifiers": ["cmd"],
+      "keySequence": null,
+      "description": "Jump to next prompt",
+      "category": "Navigation",
+      "context": "ghostty",
+      "tags": ["jump", "prompt", "next"],
+      "difficulty": "intermediate",
+      "frequency": "high",
+      "alternatives": ["Cmd+Shift+Down"]
     },
     {
+      "id": "ghostty-clear-screen",
       "key": "Cmd+K",
-      "description": "Clear screen"
+      "modifiers": ["cmd"],
+      "keySequence": null,
+      "description": "Clear screen",
+      "category": "Application",
+      "context": "ghostty",
+      "tags": ["clear", "screen", "terminal"],
+      "difficulty": "beginner",
+      "frequency": "high",
+      "alternatives": []
     },
     {
-      "key": "Cmd+Plus / Cmd+=",
-      "description": "Increase font size"
+      "id": "ghostty-increase-font-size",
+      "key": "Cmd+Plus",
+      "modifiers": ["cmd"],
+      "keySequence": null,
+      "description": "Increase font size",
+      "category": "Application",
+      "context": "ghostty",
+      "tags": ["font", "size", "increase", "zoom"],
+      "difficulty": "beginner",
+      "frequency": "medium",
+      "alternatives": ["Cmd+="]
     },
     {
+      "id": "ghostty-decrease-font-size",
       "key": "Cmd+-",
-      "description": "Decrease font size"
+      "modifiers": ["cmd"],
+      "keySequence": null,
+      "description": "Decrease font size",
+      "category": "Application",
+      "context": "ghostty",
+      "tags": ["font", "size", "decrease", "zoom"],
+      "difficulty": "beginner",
+      "frequency": "medium",
+      "alternatives": []
     },
     {
+      "id": "ghostty-reset-font-size",
       "key": "Cmd+0",
-      "description": "Reset font size"
+      "modifiers": ["cmd"],
+      "keySequence": null,
+      "description": "Reset font size",
+      "category": "Application",
+      "context": "ghostty",
+      "tags": ["font", "size", "reset", "default"],
+      "difficulty": "beginner",
+      "frequency": "medium",
+      "alternatives": []
     },
     {
+      "id": "ghostty-open-config",
       "key": "Cmd+,",
-      "description": "Open config"
+      "modifiers": ["cmd"],
+      "keySequence": null,
+      "description": "Open config",
+      "category": "Application",
+      "context": "ghostty",
+      "tags": ["config", "settings", "preferences"],
+      "difficulty": "intermediate",
+      "frequency": "low",
+      "alternatives": []
     },
     {
+      "id": "ghostty-reload-config",
       "key": "Cmd+Shift+,",
-      "description": "Reload config"
+      "modifiers": ["cmd", "shift"],
+      "keySequence": null,
+      "description": "Reload config",
+      "category": "Application",
+      "context": "ghostty",
+      "tags": ["config", "reload", "refresh"],
+      "difficulty": "intermediate",
+      "frequency": "low",
+      "alternatives": []
     },
     {
+      "id": "ghostty-toggle-inspector",
       "key": "Cmd+Option+I",
-      "description": "Toggle inspector"
+      "modifiers": ["cmd", "option"],
+      "keySequence": null,
+      "description": "Toggle inspector",
+      "category": "Application",
+      "context": "ghostty",
+      "tags": ["inspector", "debug", "toggle"],
+      "difficulty": "advanced",
+      "frequency": "low",
+      "alternatives": []
     },
     {
+      "id": "ghostty-write-screen-paste",
       "key": "Cmd+Shift+J",
-      "description": "Write scrollback to file (paste)"
+      "modifiers": ["cmd", "shift"],
+      "keySequence": null,
+      "description": "Write scrollback to file (paste)",
+      "category": "Application",
+      "context": "ghostty",
+      "tags": ["scrollback", "export", "file", "paste"],
+      "difficulty": "advanced",
+      "frequency": "low",
+      "alternatives": []
     },
     {
+      "id": "ghostty-write-screen-open",
       "key": "Cmd+Shift+Option+J",
-      "description": "Write scrollback to file (open)"
+      "modifiers": ["cmd", "shift", "option"],
+      "keySequence": null,
+      "description": "Write scrollback to file (open)",
+      "category": "Application",
+      "context": "ghostty",
+      "tags": ["scrollback", "export", "file", "open"],
+      "difficulty": "advanced",
+      "frequency": "low",
+      "alternatives": []
+    },
+    {
+      "id": "ghostty-text-beginning-line",
+      "key": "Cmd+Left",
+      "modifiers": ["cmd"],
+      "keySequence": null,
+      "description": "Move cursor to beginning of line",
+      "category": "Text Editing",
+      "context": "ghostty",
+      "tags": ["text", "cursor", "navigation", "beginning"],
+      "difficulty": "beginner",
+      "frequency": "high",
+      "alternatives": []
+    },
+    {
+      "id": "ghostty-text-end-line",
+      "key": "Cmd+Right",
+      "modifiers": ["cmd"],
+      "keySequence": null,
+      "description": "Move cursor to end of line",
+      "category": "Text Editing",
+      "context": "ghostty",
+      "tags": ["text", "cursor", "navigation", "end"],
+      "difficulty": "beginner",
+      "frequency": "high",
+      "alternatives": []
+    },
+    {
+      "id": "ghostty-text-delete-line",
+      "key": "Cmd+Backspace",
+      "modifiers": ["cmd"],
+      "keySequence": null,
+      "description": "Delete from cursor to beginning of line",
+      "category": "Text Editing",
+      "context": "ghostty",
+      "tags": ["text", "delete", "line", "clear"],
+      "difficulty": "intermediate",
+      "frequency": "medium",
+      "alternatives": []
+    },
+    {
+      "id": "ghostty-word-backward",
+      "key": "Option+Left",
+      "modifiers": ["option"],
+      "keySequence": null,
+      "description": "Move cursor backward by word",
+      "category": "Text Editing",
+      "context": "ghostty",
+      "tags": ["text", "cursor", "word", "backward"],
+      "difficulty": "intermediate",
+      "frequency": "high",
+      "alternatives": []
+    },
+    {
+      "id": "ghostty-word-forward",
+      "key": "Option+Right",
+      "modifiers": ["option"],
+      "keySequence": null,
+      "description": "Move cursor forward by word",
+      "category": "Text Editing",
+      "context": "ghostty",
+      "tags": ["text", "cursor", "word", "forward"],
+      "difficulty": "intermediate",
+      "frequency": "high",
+      "alternatives": []
+    },
+    {
+      "id": "ghostty-tab-ctrl",
+      "key": "Ctrl+Tab",
+      "modifiers": ["ctrl"],
+      "keySequence": null,
+      "description": "Next tab (alternative)",
+      "category": "Tabs",
+      "context": "ghostty",
+      "tags": ["tab", "navigation", "next", "alternative"],
+      "difficulty": "beginner",
+      "frequency": "medium",
+      "alternatives": ["Cmd+Shift+]"]
+    },
+    {
+      "id": "ghostty-tab-ctrl-shift",
+      "key": "Ctrl+Shift+Tab",
+      "modifiers": ["ctrl", "shift"],
+      "keySequence": null,
+      "description": "Previous tab (alternative)",
+      "category": "Tabs",
+      "context": "ghostty",
+      "tags": ["tab", "navigation", "previous", "alternative"],
+      "difficulty": "beginner",
+      "frequency": "medium",
+      "alternatives": ["Cmd+Shift+["]
+    },
+    {
+      "id": "ghostty-fullscreen-alt",
+      "key": "Cmd+Ctrl+F",
+      "modifiers": ["cmd", "ctrl"],
+      "keySequence": null,
+      "description": "Toggle fullscreen (alternative)",
+      "category": "Windows",
+      "context": "ghostty",
+      "tags": ["fullscreen", "toggle", "alternative"],
+      "difficulty": "intermediate",
+      "frequency": "medium",
+      "alternatives": ["Cmd+Enter"]
+    },
+    {
+      "id": "ghostty-close-tab-alt",
+      "key": "Cmd+Option+W",
+      "modifiers": ["cmd", "option"],
+      "keySequence": null,
+      "description": "Close tab (alternative)",
+      "category": "Tabs",
+      "context": "ghostty",
+      "tags": ["tab", "close", "alternative"],
+      "difficulty": "intermediate",
+      "frequency": "low",
+      "alternatives": ["Cmd+W"]
     }
   ]
 }

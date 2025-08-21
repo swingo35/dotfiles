@@ -1,0 +1,62 @@
+{
+  "name": "keybind-system",
+  "version": "1.0.0",
+  "description": "Collision-free keybinding extraction and merging system",
+  "type": "module",
+  "scripts": {
+    "workflow": "bun run cli/keybind-workflow.ts",
+    "extract": "bun run cli/extract-keybinds.ts",
+    "validate": "bun run cli/validate-config.ts",
+    "suggest": "bun run cli/generate-suggestions.ts",
+    "extract:tmux": "bun run cli/extract-keybinds.ts -t tmux",
+    "extract:ghostty": "bun run cli/extract-keybinds.ts -t ghostty",
+    "extract:aerospace": "bun run cli/extract-keybinds.ts -t aerospace",
+    "extract:all": "bun run cli/extract-keybinds.ts -o ./output",
+    "extract:markdown": "bun run cli/extract-keybinds.ts -f markdown",
+    "validate:strict": "bun run cli/validate-config.ts --strict",
+    "validate:json": "bun run cli/validate-config.ts -f json",
+    "suggest:conflicts": "bun run cli/generate-suggestions.ts -m resolve",
+    "suggest:ergonomic": "bun run cli/generate-suggestions.ts -m ergonomic",
+    "suggest:new": "bun run cli/generate-suggestions.ts -m generate",
+    "workflow:dry-run": "bun run cli/keybind-workflow.ts --dry-run --verbose",
+    "workflow:tmux-only": "bun run cli/keybind-workflow.ts -t tmux",
+    "workflow:pwa": "bun run cli/keybind-workflow.ts -o ./pwa-export",
+    "demo": "bun run scripts/demo.ts",
+    "test": "bun test"
+  },
+  "bin": {
+    "extract-keybinds": "./cli/extract-keybinds.ts",
+    "validate-config": "./cli/validate-config.ts",
+    "generate-suggestions": "./cli/generate-suggestions.ts"
+  },
+  "keywords": [
+    "keybindings",
+    "shortcuts",
+    "configuration",
+    "tmux",
+    "ghostty",
+    "aerospace",
+    "collision-detection",
+    "cli"
+  ],
+  "author": "Sean Wingo",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^20.0.0"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "engines": {
+    "bun": ">=1.0.0"
+  },
+  "files": [
+    "cli/",
+    "collision-detector/",
+    "extractors/",
+    "merger/",
+    "types/",
+    "data/",
+    "README.md"
+  ]
+}

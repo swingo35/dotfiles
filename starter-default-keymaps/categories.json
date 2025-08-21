@@ -1,0 +1,185 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2024-01-16",
+  "description": "Category metadata for keybinding organization and visual learning",
+  "categories": {
+    "General": {
+      "name": "General",
+      "icon": "⚙️",
+      "color": "#6B7280",
+      "description": "Essential system-wide shortcuts",
+      "priority": 1,
+      "learningPath": "essential"
+    },
+    "Text Editing": {
+      "name": "Text Editing",
+      "icon": "✏️",
+      "color": "#3B82F6",
+      "description": "Text manipulation and cursor navigation",
+      "priority": 2,
+      "learningPath": "essential"
+    },
+    "Window Management": {
+      "name": "Window Management",
+      "icon": "🪟",
+      "color": "#8B5CF6",
+      "description": "Window and space management shortcuts",
+      "priority": 3,
+      "learningPath": "intermediate"
+    },
+    "Finder": {
+      "name": "Finder",
+      "icon": "📁",
+      "color": "#10B981",
+      "description": "File management and navigation",
+      "priority": 4,
+      "learningPath": "essential"
+    },
+    "Browser": {
+      "name": "Browser",
+      "icon": "🌐",
+      "color": "#F59E0B",
+      "description": "Web browsing and tab management",
+      "priority": 5,
+      "learningPath": "essential"
+    },
+    "Screenshots": {
+      "name": "Screenshots",
+      "icon": "📸",
+      "color": "#EF4444",
+      "description": "Screen capture and recording",
+      "priority": 6,
+      "learningPath": "intermediate"
+    },
+    "Security": {
+      "name": "Security",
+      "icon": "🔒",
+      "color": "#DC2626",
+      "description": "Security and privacy controls",
+      "priority": 7,
+      "learningPath": "intermediate"
+    },
+    "Accessibility": {
+      "name": "Accessibility",
+      "icon": "♿",
+      "color": "#059669",
+      "description": "Accessibility features and assistive tools",
+      "priority": 8,
+      "learningPath": "advanced"
+    },
+    "Core": {
+      "name": "Core",
+      "icon": "⚡",
+      "color": "#7C3AED",
+      "description": "Fundamental tmux operations",
+      "priority": 1,
+      "learningPath": "essential"
+    },
+    "Sessions": {
+      "name": "Sessions",
+      "icon": "🎯",
+      "color": "#2563EB",
+      "description": "Session management and control",
+      "priority": 2,
+      "learningPath": "essential"
+    },
+    "Windows": {
+      "name": "Windows",
+      "icon": "🪟",
+      "color": "#059669",
+      "description": "Window creation and navigation",
+      "priority": 3,
+      "learningPath": "essential"
+    },
+    "Panes": {
+      "name": "Panes",
+      "icon": "▦",
+      "color": "#DC2626",
+      "description": "Pane splitting and management",
+      "priority": 4,
+      "learningPath": "intermediate"
+    },
+    "Copy & Paste": {
+      "name": "Copy & Paste",
+      "icon": "📋",
+      "color": "#7C2D12",
+      "description": "Text copying and pasting operations",
+      "priority": 5,
+      "learningPath": "intermediate"
+    },
+    "Tabs": {
+      "name": "Tabs",
+      "icon": "📑",
+      "color": "#0369A1",
+      "description": "Tab management and navigation",
+      "priority": 3,
+      "learningPath": "essential"
+    },
+    "Splits": {
+      "name": "Splits",
+      "icon": "⧉",
+      "color": "#BE185D",
+      "description": "Terminal splitting and pane management",
+      "priority": 4,
+      "learningPath": "intermediate"
+    },
+    "Application": {
+      "name": "Application",
+      "icon": "🔧",
+      "color": "#374151",
+      "description": "Application-level controls",
+      "priority": 6,
+      "learningPath": "basic"
+    }
+  },
+  "learningPaths": {
+    "essential": {
+      "name": "Essential",
+      "description": "Must-know shortcuts for basic productivity",
+      "order": 1,
+      "estimatedTime": "1-2 hours",
+      "prerequisites": []
+    },
+    "intermediate": {
+      "name": "Intermediate", 
+      "description": "Shortcuts for enhanced workflow efficiency",
+      "order": 2,
+      "estimatedTime": "2-4 hours",
+      "prerequisites": ["essential"]
+    },
+    "advanced": {
+      "name": "Advanced",
+      "description": "Expert-level shortcuts and specialized tools",
+      "order": 3,
+      "estimatedTime": "4-6 hours",
+      "prerequisites": ["essential", "intermediate"]
+    },
+    "basic": {
+      "name": "Basic",
+      "description": "Simple shortcuts everyone should know",
+      "order": 0,
+      "estimatedTime": "30 minutes",
+      "prerequisites": []
+    }
+  },
+  "difficultyLevels": {
+    "beginner": {
+      "name": "Beginner",
+      "color": "#10B981",
+      "description": "Easy to learn and remember",
+      "practiceRecommendation": "3-5 repetitions"
+    },
+    "intermediate": {
+      "name": "Intermediate", 
+      "color": "#F59E0B",
+      "description": "Requires some practice to master",
+      "practiceRecommendation": "8-12 repetitions"
+    },
+    "advanced": {
+      "name": "Advanced",
+      "color": "#EF4444", 
+      "description": "Complex shortcuts for power users",
+      "practiceRecommendation": "15-20 repetitions"
+    }
+  }
+}
