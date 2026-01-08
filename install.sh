@@ -26,7 +26,7 @@ print_banner() {
 ╔══════════════════════════════════════════════════════════════════╗
 ║                 Modern macOS Developer Setup                     ║
 ║                                                                  ║
-║  🚀 AeroSpace   🖥️  Ghostty    📊 tmux      ✏️  Neovim          ║
+║  🚀 AeroSpace   🖥️  Ghostty    📊 tmux      ✏️  Zed             ║
 ║  ⚡ Bun         🔧 Homebrew   🐚 Zsh       🤖 Claude Code      ║
 ╚══════════════════════════════════════════════════════════════════╝
 EOF
@@ -84,14 +84,15 @@ install_core_packages() {
     else
         # Fallback to manual installation
         brew install git gh lazygit
-        brew install tmux neovim
+        brew install tmux
         brew install bun node
         brew install fzf ripgrep fd bat eza
         brew install karabiner-elements
-        
+
         # Cask applications
         brew install --cask ghostty
         brew install --cask aerospace
+        brew install --cask zed
         brew install --cask font-jetbrains-mono-nerd-font
     fi
     
@@ -119,29 +120,31 @@ setup_shell() {
 
 setup_directories() {
     log "Creating essential directories..."
-    
-    mkdir -p ~/.config/{ghostty,aerospace,nvim,karabiner}
+
+    mkdir -p ~/.config/{ghostty,aerospace,zed,karabiner}
     mkdir -p ~/code/{personal,work,forks}
     mkdir -p ~/.local/bin
-    
+
     log "Directories created successfully"
 }
 
 link_configurations() {
     log "Linking configuration files..."
-    
+
     # Create symlinks for configuration files
     ln -sf "$DOTFILES_DIR/aerospace/aerospace.toml" ~/.config/aerospace/aerospace.toml
     ln -sf "$DOTFILES_DIR/ghostty/config" ~/.config/ghostty/config
     ln -sf "$DOTFILES_DIR/tmux/tmux.conf" ~/.tmux.conf
-    ln -sf "$DOTFILES_DIR/nvim/init.lua" ~/.config/nvim/init.lua
+    ln -sf "$DOTFILES_DIR/zed/settings.json" ~/.config/zed/settings.json
+    ln -sf "$DOTFILES_DIR/zed/keymap.json" ~/.config/zed/keymap.json
+    ln -sf "$DOTFILES_DIR/zed/tasks.json" ~/.config/zed/tasks.json
     ln -sf "$DOTFILES_DIR/zsh/zshrc" ~/.zshrc
     ln -sf "$DOTFILES_DIR/git/gitconfig" ~/.gitconfig
     ln -sf "$DOTFILES_DIR/git/gitignore_global" ~/.gitignore_global
-    
+
     # Copy Karabiner configuration (can't symlink due to app requirements)
     cp "$DOTFILES_DIR/karabiner/karabiner.json" ~/.config/karabiner/karabiner.json
-    
+
     log "Configuration files linked successfully"
 }
 

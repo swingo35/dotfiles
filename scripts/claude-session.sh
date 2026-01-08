@@ -340,7 +340,7 @@ setup_tmux_session() {
     
     # Create additional windows based on project type
     tmux new-window -t "$session_name:1" -n "editor" -c "$project_path"
-    tmux send-keys -t "$session_name:editor" "nvim ." C-m
+    tmux send-keys -t "$session_name:editor" "zed ." C-m
     
     tmux new-window -t "$session_name:2" -n "terminal" -c "$project_path"
     

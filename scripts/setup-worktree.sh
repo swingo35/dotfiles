@@ -295,7 +295,7 @@ create_tmux_session() {
     
     # Create editor window
     tmux new-window -t "$session_name:1" -n "editor" -c "$worktree_path"
-    tmux send-keys -t "$session_name:editor" "nvim ." C-m
+    tmux send-keys -t "$session_name:editor" "zed ." C-m
     
     # Create git window
     tmux new-window -t "$session_name:2" -n "git" -c "$worktree_path"
@@ -310,14 +310,13 @@ create_tmux_session() {
 
 open_in_editor() {
     local worktree_path="$1"
-    
-    if command -v code &> /dev/null; then
+
+    if command -v zed &> /dev/null; then
+        log "Opening in Zed..."
+        zed "$worktree_path"
+    elif command -v code &> /dev/null; then
         log "Opening in VS Code..."
         code "$worktree_path"
-    elif command -v nvim &> /dev/null; then
-        log "Opening in Neovim..."
-        cd "$worktree_path"
-        nvim .
     else
         log "No suitable editor found"
     fi

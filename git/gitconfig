@@ -4,7 +4,7 @@
 	# signingkey = YOUR_GPG_KEY_ID  # Uncomment and set if using GPG signing
 
 [core]
-	editor = nvim
+	editor = zed --wait
 	pager = delta
 	excludesfile = ~/.gitignore_global
 	autocrlf = input
@@ -31,12 +31,18 @@
 	autoSquash = true
 
 [merge]
-	tool = vimdiff
+	tool = zed
 	conflictstyle = diff3
 
 [diff]
-	tool = vimdiff
+	tool = zed
 	colorMoved = default
+
+[mergetool "zed"]
+	cmd = zed --wait "$MERGED"
+
+[difftool "zed"]
+	cmd = zed --wait --diff "$LOCAL" "$REMOTE"
 
 [delta]
 	navigate = true

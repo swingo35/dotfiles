@@ -1,0 +1,53 @@
+[
+  {
+    "label": "lazygit",
+    "command": "lazygit",
+    "use_new_terminal": true,
+    "allow_concurrent_runs": false,
+    "reveal": "always"
+  },
+  {
+    "label": "claude",
+    "command": "claude",
+    "use_new_terminal": true,
+    "allow_concurrent_runs": false,
+    "reveal": "always"
+  },
+  {
+    "label": "npm: dev",
+    "command": "npm run dev",
+    "use_new_terminal": true,
+    "reveal": "always"
+  },
+  {
+    "label": "npm: test",
+    "command": "npm test",
+    "use_new_terminal": true
+  },
+  {
+    "label": "bun: dev",
+    "command": "bun run dev",
+    "use_new_terminal": true,
+    "reveal": "always"
+  },
+  {
+    "label": "bun: test",
+    "command": "bun test",
+    "use_new_terminal": true
+  },
+  {
+    "label": "cargo: build",
+    "command": "cargo build",
+    "use_new_terminal": true
+  },
+  {
+    "label": "cargo: test",
+    "command": "cargo test",
+    "use_new_terminal": true
+  },
+  {
+    "label": "go: test",
+    "command": "go test ./...",
+    "use_new_terminal": true
+  }
+]

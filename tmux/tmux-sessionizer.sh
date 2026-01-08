@@ -73,7 +73,7 @@ setup_javascript_project() {
     
     # Editor window
     tmux new-window -t "$session_name:1" -n 'editor' -c "$project_path"
-    tmux send-keys -t "$session_name:editor" 'nvim .' C-m
+    tmux send-keys -t "$session_name:editor" 'zed .' C-m
     
     # Development server window
     tmux new-window -t "$session_name:2" -n 'dev' -c "$project_path"
@@ -98,7 +98,7 @@ setup_rust_project() {
     
     # Editor
     tmux new-window -t "$session_name:1" -n 'editor' -c "$project_path"
-    tmux send-keys -t "$session_name:editor" 'nvim .' C-m
+    tmux send-keys -t "$session_name:editor" 'zed .' C-m
     
     # Build and run
     tmux new-window -t "$session_name:2" -n 'cargo' -c "$project_path"
@@ -118,7 +118,7 @@ setup_go_project() {
     
     # Editor
     tmux new-window -t "$session_name:1" -n 'editor' -c "$project_path"
-    tmux send-keys -t "$session_name:editor" 'nvim .' C-m
+    tmux send-keys -t "$session_name:editor" 'zed .' C-m
     
     # Development
     tmux new-window -t "$session_name:2" -n 'dev' -c "$project_path"
@@ -138,7 +138,7 @@ setup_python_project() {
     
     # Editor
     tmux new-window -t "$session_name:1" -n 'editor' -c "$project_path"
-    tmux send-keys -t "$session_name:editor" 'nvim .' C-m
+    tmux send-keys -t "$session_name:editor" 'zed .' C-m
     
     # Development environment
     tmux new-window -t "$session_name:2" -n 'dev' -c "$project_path"
@@ -157,7 +157,7 @@ setup_generic_project() {
     
     # Editor
     tmux new-window -t "$session_name:1" -n 'editor' -c "$project_path"
-    tmux send-keys -t "$session_name:editor" 'nvim .' C-m
+    tmux send-keys -t "$session_name:editor" 'zed .' C-m
     
     # Terminal
     tmux new-window -t "$session_name:2" -n 'terminal' -c "$project_path"

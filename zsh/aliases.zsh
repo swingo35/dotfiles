@@ -38,8 +38,8 @@ alias ts='tmux-sessionizer'
 alias tk='tmux kill-session -t'
 
 # Development shortcuts
-alias vim='nvim'
-alias vi='nvim'
+alias vim='zed'
+alias vi='zed'
 alias be='bundle exec'
 alias dc='docker-compose'
 alias k='kubectl'

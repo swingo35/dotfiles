@@ -32,7 +32,7 @@ brew "htop"         # Better top
 brew "btop"         # Modern htop alternative
 
 # Text editors and development
-brew "neovim"       # Modern vim
+cask "zed"          # Modern editor with AI integration
 cask "visual-studio-code"
 
 # ===========================

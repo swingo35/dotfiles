@@ -1,0 +1,13 @@
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "space e": "project_panel::ToggleFocus",
+      "space f f": "file_finder::Toggle",
+      "space t": "terminal_panel::ToggleFocus",
+      "space a": "assistant::ToggleFocus",
+      "space w": "workspace::Save",
+      "space q": "pane::CloseActiveItem"
+    }
+  }
+]

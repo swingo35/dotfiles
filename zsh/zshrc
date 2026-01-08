@@ -7,8 +7,8 @@
 # Environment Variables
 # =====================
 
-export EDITOR="nvim"
-export VISUAL="nvim" 
+export EDITOR="zed --wait"
+export VISUAL="zed --wait" 
 export PAGER="less"
 export BROWSER="open"
 
@@ -134,9 +134,9 @@ alias gb='git branch'
 alias lg='lazygit'
 
 # Development shortcuts
-alias vim='nvim'
-alias vi='nvim'
-alias n='nvim'
+alias vim='zed'
+alias vi='zed'
+alias n='zed'
 alias c='code'
 alias t='tmux-sessionizer'
 alias ta='tmux attach'
@@ -164,10 +164,10 @@ alias ports='lsof -i -P -n | grep LISTEN'
 alias flush='sudo dscacheutil -flushcache'
 
 # Quick edits
-alias zshrc='nvim ~/.zshrc'
-alias vimrc='nvim ~/.config/nvim/init.lua'
-alias tmuxrc='nvim ~/.tmux.conf'
-alias gitconfig='nvim ~/.gitconfig'
+alias zshrc='zed ~/.zshrc'
+alias zedrc='zed ~/.config/zed/settings.json'
+alias tmuxrc='zed ~/.tmux.conf'
+alias gitconfig='zed ~/.gitconfig'
 
 # Development Functions
 # =====================
@@ -290,9 +290,9 @@ project() {
 note() {
     local note_name="${1:-$(date +%Y%m%d_%H%M%S)}"
     local notes_dir="$HOME/Documents/notes"
-    
+
     mkdir -p "$notes_dir"
-    nvim "$notes_dir/$note_name.md"
+    zed "$notes_dir/$note_name.md"
 }
 
 # Weather check

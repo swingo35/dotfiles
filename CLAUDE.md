@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Repository Overview
 
-This is a modern macOS developer dotfiles repository that provides a complete development environment setup. The repository contains configuration files and automation scripts for a keyboard-driven, AI-enhanced development workflow integrating AeroSpace (window management), Ghostty (terminal), tmux (session management), Neovim (editor), and various development tools.
+This is a modern macOS developer dotfiles repository that provides a complete development environment setup. The repository contains configuration files and automation scripts for a keyboard-driven, AI-enhanced development workflow integrating AeroSpace (window management), Ghostty (terminal), tmux (session management), Zed (editor), and various development tools.
 
 ## Essential Commands
 
@@ -35,7 +35,7 @@ tmux-sessionizer <path>         # Create/attach to specific project session
 ### Development Environment Testing
 ```bash
 # Verify installation health
-for tool in git gh tmux nvim aerospace claude bun; do
+for tool in git gh tmux zed aerospace claude bun; do
     command -v $tool &> /dev/null && echo "✅ $tool" || echo "❌ $tool missing"
 done
 
@@ -104,7 +104,7 @@ All automation scripts follow consistent patterns:
 ### Development Tools Chain
 - **Homebrew Bundle** (`Brewfile`) manages all dependencies declaratively
 - **Multiple language runtimes** supported (Node.js via Bun, Rust, Go, Python)
-- **LSP integration** in Neovim for all supported languages
+- **LSP integration** in Zed for all supported languages (built-in, no plugins needed)
 - **Git configuration** supports separate work/personal contexts via `includeIf`
 
 ### AI Development Enhancement

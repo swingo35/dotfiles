@@ -36,7 +36,7 @@ tmux-sessionizer
 | **AeroSpace** | Window Management | i3-inspired tiling, multi-monitor support |
 | **Ghostty** | Terminal | GPU-accelerated, tmux integration |
 | **tmux** | Session Management | Project-specific layouts, persistence |
-| **Neovim** | Editor | LSP support, modern configuration |
+| **Zed** | Editor | Built-in LSP, AI assistant, vim mode |
 | **Zsh** | Shell | Smart completion, plugin ecosystem |
 | **Karabiner** | Keyboard | Hyper key for conflict-free shortcuts |
 
@@ -57,9 +57,11 @@ dotfiles/
 │   ├── tmux.conf           # Session management
 │   ├── tmux-sessionizer.sh # Project automation
 │   └── tmux.md             # Key bindings & workflows
-├── nvim/
-│   ├── init.lua            # Editor configuration
-│   └── nvim.md             # LSP setup & plugins
+├── zed/
+│   ├── settings.json       # Editor configuration
+│   ├── keymap.json         # Vim-mode keybindings
+│   ├── tasks.json          # Task runner definitions
+│   └── zed.md              # Setup & keybindings guide
 ├── zsh/
 │   ├── zshrc               # Shell configuration
 │   ├── aliases.zsh         # Command shortcuts
@@ -150,8 +152,8 @@ claude auth login  # Claude Code
 
 ### What Gets Installed
 - **Homebrew** package manager
-- **Core tools**: git, gh, tmux, neovim, fzf, ripgrep
-- **Applications**: Ghostty, AeroSpace, Karabiner-Elements
+- **Core tools**: git, gh, tmux, fzf, ripgrep
+- **Applications**: Ghostty, AeroSpace, Zed, Karabiner-Elements
 - **Fonts**: JetBrains Mono Nerd Font
 - **Shell**: Zsh with Oh My Zsh and plugins
 - **Configurations**: All dotfiles linked to `~/.config/`
