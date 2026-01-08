@@ -7,7 +7,6 @@ tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "nikitabobko/tap"
-tap "bun-sh/tap"
 
 # ===========================
 # Core Development Tools
@@ -39,7 +38,7 @@ cask "visual-studio-code"
 # JavaScript/TypeScript Development
 # ===========================
 
-brew "bun-sh/tap/bun"   # Fast JavaScript runtime
+brew "bun"              # Fast JavaScript runtime
 brew "node"             # Node.js (backup/compatibility)
 brew "fnm"             # Fast Node Manager
 
@@ -119,7 +118,7 @@ brew "sops"         # Secrets management
 # ===========================
 
 # Docker
-cask "docker"
+cask "docker-desktop"
 
 # Kubernetes
 brew "kubectl"
@@ -133,7 +132,7 @@ brew "google-cloud-sdk"
 
 # Infrastructure as Code
 brew "terraform"
-brew "packer"
+# brew "packer"  # Requires hashicorp/tap
 brew "ansible"
 
 # ===========================
